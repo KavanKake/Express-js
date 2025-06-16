@@ -61,7 +61,7 @@ app.post('/signup', async (req, res) => {
 
     const hashedPassord = hashPassword(passord);
 
-    const query = `INSERT INTO Accounts (fornavn, etternavn, username, epost, telefonnummer, passord) 
+    const query = `INSERT INTO Accounts (fornavn, etternavn, username, epost, telefonnummer, passord)       
                 VALUES (?, ?, ?, ?, ?, ?)`;
 
     try {
